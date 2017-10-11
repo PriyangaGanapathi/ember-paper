@@ -1,5 +1,80 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
-
-{{outlet}}
+<div>
+{{#paper-autocomplete
+	options=employees
+	selected=employee1
+	searchField="name"
+	labelPath="name"
+	label="Member"
+	loadingMessage="Searching member..."
+	noMatchesMessage="Oops this member doesn't exist."
+	onSelectionChange=(action (mut employee1)) as |employee select|}}
+	{{paper-autocomplete-highlight
+		label=employee.name
+		searchText=select.searchText
+		flags="i"}}
+{{/paper-autocomplete}}
+</div>
+<div style="margin-top:300px;">
+{{#paper-autocomplete
+	options=employees
+	selected=employee2
+	searchField="name"
+	labelPath="name"
+	label="Member"
+	loadingMessage="Searching member..."
+	noMatchesMessage="Oops this member doesn't exist."
+	onSelectionChange=(action (mut employee2)) as |employee select|}}
+	{{paper-autocomplete-highlight
+		label=employee.name
+		searchText=select.searchText
+		flags="i"}}
+{{/paper-autocomplete}}
+</div>
+<div style="margin-top:300px;">
+{{#paper-autocomplete
+	options=employees
+	selected=employee3
+	searchField="name"
+	labelPath="name"
+	label="Member"
+	loadingMessage="Searching member..."
+	noMatchesMessage="Oops this member doesn't exist."
+	onSelectionChange=(action (mut employee3)) as |employee select|}}
+	{{paper-autocomplete-highlight
+		label=employee.name
+		searchText=select.searchText
+		flags="i"}}
+{{/paper-autocomplete}}
+</div>
+<div style="margin-top:300px;">
+{{#paper-autocomplete
+	options=employees
+	selected=employee4
+	searchField="name"
+	labelPath="name"
+	label="Member"
+	loadingMessage="Searching member..."
+	noMatchesMessage="Oops this member doesn't exist."
+	onSelectionChange=(action (mut employee4)) as |employee select|}}
+	{{paper-autocomplete-highlight
+		label=employee.name
+		searchText=select.searchText
+		flags="i"}}
+{{/paper-autocomplete}}
+</div>
+<div style="margin-top:300px;">
+{{#paper-autocomplete
+	options=employees
+	selected=employee5
+	searchField="name"
+	labelPath="name"
+	label="Member"
+	loadingMessage="Searching member..."
+	noMatchesMessage="Oops this member doesn't exist."
+	onSelectionChange=(action (mut employee5)) as |employee select|}}
+	{{paper-autocomplete-highlight
+		label=employee.name
+		searchText=select.searchText
+		flags="i"}}
+{{/paper-autocomplete}}
+</div>
